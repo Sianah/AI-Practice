@@ -56,4 +56,16 @@ if __name__ == "__main__":
             f.write(example_str + "\n")
 
 
+import openai
+
+# Replace with your actual OpenAI API key
+openai.api_key = 'your-api-key'
+
+response = openai.Completion.create(
+  model="ft-<YOUR_ORG>-<MODEL_NAME>:<SUFFIX>", # Replace with your actual fine-tuned model name
+  prompt="Your prompt here",
+  max_tokens=50
+)
+
+print(response.choices[0].text.strip())
 
