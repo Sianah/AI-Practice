@@ -1,7 +1,7 @@
 import openai
 
 # Replace with your OpenAI API key.
-openai.api_key = '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'
+openai.api_key = 'API KEY'
 
 
 def shakespearean_chat():
